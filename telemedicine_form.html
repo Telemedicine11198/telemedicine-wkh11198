@@ -1,92 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>ฟอร์ม Telemedicine</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #fcefe9;
-      padding: 2rem;
-      color: #444;
-    }
-    h2 {
-      text-align: center;
-      color: #5d5d5d;
-    }
-    form {
-      max-width: 600px;
-      margin: auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    label {
-      display: block;
-      margin-top: 1rem;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.25rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    button {
-      margin-top: 1.5rem;
-      background-color: #ffb6b9;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Telemedicine Form</title>
+    <style>
+        body {
+            font-family: 'sans-serif';
+            background-color: #fef6f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #555;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button {
+            margin-top: 20px;
+            background-color: #f9a8d4;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #f472b6;
+        }
+    </style>
 </head>
 <body>
-  <h2>บันทึกข้อมูลส่วนตัว เพื่อทำการรักษาแพทย์ทางไกล (Telemedicine)<br>โรงพยาบาลเวียงแก่น จังหวัดเชียงราย</h2>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLScfBuGjq2UwKPHynyFYihxqUnWFeQMMqVPJS0ymL4FpsHPpbA/formResponse" method="POST" target="_blank">
-    <label>1. ชื่อ-นามสกุล:<input type="text" name="entry.1288595729" required></label>
-    <label>2. อายุ:<input type="number" name="entry.1352160760" required></label>
-    <label>3. เบอร์โทรที่ติดต่อได้:<input type="number" name="entry.894454466" required></label>
-    <label>4. เลขบัตรประจำตัวประชาชน 13 หลัก:<input type="number" name="entry.389245975" required></label>
-    <label>5. น้ำหนัก (กิโลกรัม):<input type="number" name="entry.186940510" required></label>
-    <label>6. ส่วนสูง (เซ็นติเมตร):<input type="number" name="entry.245155933" required></label>
-    <label>7. อัตราชีพจร (ครั้ง/นาที):<input type="number" name="entry.1206537028" required></label>
-    <label>8. ความดันโลหิต ตัวบน (mmHg):<input type="number" name="entry.2138447379" required></label>
-    <label>9. ความดันโลหิต ตัวล่าง (mmHg):<input type="number" name="entry.993898402" required></label>
-    <label>10. วิธีคุมกำเนิด (ตอบเฉพาะผู้หญิงที่มีประจำเดือน):
-      <select name="entry.411730260">
-        <option value="">-- เลือก --</option>
-        <option>ฉีดยาคุม</option>
-        <option>ทานยาคุม</option>
-        <option>ฝังยาคุม</option>
-        <option>ถุงยางอนามัย</option>
-        <option>ทำหมัน</option>
-        <option>ผ่าตัดมดลูก</option>
-      </select>
-    </label>
-    <label>11. สถานะประจำเดือน:
-      <select name="entry.305253917">
-        <option value="">-- เลือก --</option>
-        <option>ประจำเดือนหมด</option>
-        <option>ประจำเดือนมาปกติ</option>
-        <option>ไม่แน่ใจ</option>
-      </select>
-    </label>
-    <label>12. ประจำเดือนที่มาล่าสุด วันที่เท่าไหร่:
-      <input type="text" name="entry.500823164" placeholder="เช่น 15/4/2568">
-    </label>
-    <label>13. จำนวนเม็ดยาที่เหลือ:
-      <input type="number" name="entry.532833575">
-    </label>
-    <label>14. อาการผิดปกติหรืออาการที่ต้องการบอกแพทย์:
-      <textarea name="entry.596202178" rows="3"></textarea>
-    </label>
-    <button type="submit">ส่งข้อมูล</button>
-  </form>
+    <h1>บันทึกข้อมูลส่วนตัว เพื่อทำการรักษาแพทย์ทางไกล (Telemedicine)<br>โรงพยาบาลเวียงแก่น จังหวัดเชียงราย</h1>
+    <form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLScfBuGjq2UwKPHynyFYihxqUnWFeQMMqVPJS0ymL4FpsHPpbA/formResponse" target="_self">
+        <label>ชื่อ-นามสกุล</label>
+        <input type="text" name="entry.1288595729" required>
+
+        <label>อายุ</label>
+        <input type="number" name="entry.1352160760" required>
+
+        <label>เบอร์โทรที่ติดต่อได้</label>
+        <input type="number" name="entry.894454466" required>
+
+        <label>เลขบัตรประจำตัวประชาชน 13 หลัก</label>
+        <input type="number" name="entry.389245975" required>
+
+        <label>น้ำหนัก (กิโลกรัม)</label>
+        <input type="number" name="entry.186940510" required>
+
+        <label>ส่วนสูง (เซ็นติเมตร)</label>
+        <input type="number" name="entry.245155933" required>
+
+        <label>อัตราชีพจร (ครั้ง/นาที)</label>
+        <input type="number" name="entry.1206537028" required>
+
+        <label>ความดันโลหิต ตัวบน (mmHg)</label>
+        <input type="number" name="entry.2138447379" required>
+
+        <label>ความดันโลหิต ตัวล่าง (mmHg)</label>
+        <input type="number" name="entry.993898402" required>
+
+        <label>วิธีคุมกำเนิด *ตอบเฉพาะผู้หญิงที่มีประจำเดือน*</label>
+        <select name="entry.411730260">
+            <option value="ฉีดยาคุม">ฉีดยาคุม</option>
+            <option value="ทานยาคุม">ทานยาคุม</option>
+            <option value="ฝังยาคุม">ฝังยาคุม</option>
+            <option value="ถุงยางอนามัย">ถุงยางอนามัย</option>
+            <option value="ทำหมัน">ทำหมัน</option>
+            <option value="ผ่าตัดมดลูก">ผ่าตัดมดลูก</option>
+        </select>
+
+        <label>สถานะประจำเดือน</label>
+        <select name="entry.305253917">
+            <option value="ประจำเดือนหมด">ประจำเดือนหมด</option>
+            <option value="ประจำเดือนมาปกติ">ประจำเดือนมาปกติ</option>
+            <option value="ไม่แน่ใจ">ไม่แน่ใจ</option>
+        </select>
+
+        <label>ประจำเดือนที่มาล่าสุดวันที่เท่าไหร่</label>
+        <input type="text" name="entry.500823164" required>
+
+        <label>จำนวนเม็ดยาที่เหลือ</label>
+        <input type="number" name="entry.532833575" required>
+
+        <label>อาการผิดปกติหรืออาการที่ต้องการบอกแพทย์</label>
+        <textarea name="entry.596202178" rows="4"></textarea>
+
+        <button type="submit">ส่งข้อมูล</button>
+    </form>
 </body>
 </html>
